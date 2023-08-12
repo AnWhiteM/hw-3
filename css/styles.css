@@ -344,8 +344,6 @@ main {
 
 .footerlogo {
   display: inline-block;
-  width: 71px;
-  height: 21px;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -360,8 +358,6 @@ main {
 
 .footerlogo-white {
   display: inline-block;
-  width: 71px;
-  height: 21px;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
