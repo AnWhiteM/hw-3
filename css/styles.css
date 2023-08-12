@@ -340,6 +340,7 @@ main {
   flex-shrink: 0;
   background: var(--navyblue, #2e2f42);
   flex-direction: column;
+  display: flex;
 }
 
 .footerlogo {
