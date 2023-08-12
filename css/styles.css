@@ -3,14 +3,28 @@
   --secondary-color: gray;
 }
 
-.adrss {
-  font-style: normal;
+img {
+  display: block;
 }
-.link {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+a {
   text-decoration: none;
 }
-.list {
-  list-style: none;
+.adrss {
+  font-style: normal;
 }
 
 body {
@@ -23,8 +37,15 @@ body {
   color: #434455;
   background-color: var(--primary-color);
 }
+
+.container {
+  display: flex;
+  width: 1158px;
+  margin: 0;
+  padding: 0 15px;
+}
 /* header */
-header {
+.header {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -32,9 +53,12 @@ header {
   width: 1440px;
   height: 72px;
   flex-shrink: 0;
-  border-bottom: 5px rgba(231, 233, 252, 1);
   padding-top: -5px;
-  border-bottom: 2px solid rgba(231, 233, 252, 1);
+  border-bottom: 1px solid #e7e9fc;
+}
+.navigation {
+  display: flex;
+  align-items: center;
 }
 .logo {
   color: var(--iris, #4d5ae5);
@@ -46,15 +70,17 @@ header {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .logo span {
   color: var(--navyblue, #2e2f42);
 }
 .nav-list {
   list-style: none;
-  display: inline-block;
+  display: flex;
   margin-right: 120px;
   margin-left: 50px;
+  gap: 40px;
 }
 .nav-list li {
   margin: 0 10px;
@@ -71,6 +97,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 24px 0;
 }
 .nav-element:hover {
   color: var(--iris, #404bbf);
@@ -79,12 +106,9 @@ header {
   color: var(--iris, #404bbf);
 }
 .address-list {
-  list-style: none;
-  display: inline-block;
-}
-.address-list li {
-  margin: 0 40px;
-  display: inline-block;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .address-element {
