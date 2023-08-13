@@ -23,10 +23,7 @@ ul {
 a {
   text-decoration: none;
 }
-.adrss {
-  font-style: normal;
-  display: flex;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -51,12 +48,16 @@ body {
 }
 
 .container {
-  display: flex;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 /* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header {
   display: flex;
   text-align: center;
@@ -82,7 +83,6 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 76px;
 }
 .logo span {
   color: var(--navyblue, #2e2f42);
@@ -90,18 +90,13 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
-  margin-right: 120px;
-  margin-left: 50px;
   gap: 40px;
-}
-.nav-list li {
-  margin: 0 10px;
-  display: inline-block;
+  margin-left: 76px;
 }
 
 .nav-element {
   color: var(--navyblue, #2e2f42);
-
+  display: block;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -116,6 +111,10 @@ body {
 }
 .nav-element:focus {
   color: var(--iris, #404bbf);
+}
+.adrss {
+  margin-left: auto;
+  font-style: normal;
 }
 .address-list {
   display: flex;
@@ -153,22 +152,19 @@ main {
   flex-shrink: 0;
   background-color: var(--navyblue, #2e2f42);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .hero-text {
   color: var(--white, #fff);
-  text-align: center;
   max-width: 496px;
-
-  /* Header 1 */
   font-family: Roboto;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  margin: auto;
+  padding: auto;
 }
 .os-button {
   display: block;
@@ -182,16 +178,16 @@ main {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
-
-  /* Button Text */
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
-  text-align: center;
   cursor: pointer;
+  margin: auto;
+  padding: auto;
+  margin-top: 48px;
 }
 .os-button:hover {
   background-color: #404bbf;
@@ -289,8 +285,6 @@ main {
 }
 .team-list {
   display: flex;
-  padding-top: 50px;
-  padding-left: 145px;
   gap: 24px;
 }
 
@@ -304,7 +298,6 @@ main {
 }
 .name-profession {
   text-align: center;
-  margin-bottom: 8px;
   padding: 32px 0;
 }
 
@@ -394,9 +387,9 @@ main {
   align-items: center;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
-  background: #4d5ae5;
-  color: #f4f4fd;
+  border: 1px solid rgba(231, 233, 252, 1);
+  background: rgba(244, 244, 253, 1);
+  color: rgba(77, 90, 229, 1);
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -407,20 +400,17 @@ main {
 }
 .filter-el:hover,
 .filter-el:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(64, 75, 191, 1);
   border: 1px solid transparent;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
   row-gap: 48px;
 }
-.portfolio-list li {
-  margin-bottom: 50px;
-  margin-right: 20px;
-}
-
 .example-block {
   display: flex;
   width: calc((100% - 48px) / 3);
@@ -430,7 +420,6 @@ main {
   align-items: flex-start;
   gap: 32px;
   flex-shrink: 0;
-  border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
 .name-type {
